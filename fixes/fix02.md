@@ -1,0 +1,3 @@
+- name の font-size が大きい。24px で
+- name-kana は name の右隣に配置。サイズは今のままでいいので、name に対して縦方向が中央に配置されるようにして
+- .project-description で改行が反映されて表示されてない。pre-line がいいと思う。
