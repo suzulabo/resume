@@ -1,7 +1,7 @@
 ---
 name: 鈴木健志
-description: 広島在住のフリープログラマー
-icon: face2-transparent.png
+address: 広島県広島市
+icon: ./face2-transparent.png
 github: https://github.com/suzulabo
 ---
 

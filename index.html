@@ -3,92 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>職務経歴書 - 山田 太郎</title>
+    <title>職務経歴書 - 鈴木健志</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>山田 太郎</h1>
-            <p class="job-title">ソフトウェアエンジニア</p>
-            <div class="contact-info">
-                <p>メール: taro.yamada@example.com</p>
-                <p>電話: 090-1234-5678</p>
-                <p>LinkedIn: linkedin.com/in/taroyamada</p>
-                <p>GitHub: github.com/taroyamada</p>
-            </div>
-        </header>
-
-        <section class="section">
-            <h2 class="section-title">概要</h2>
-            <p class="summary">
-                5年以上の経験を持つソフトウェアエンジニア。Webアプリケーションの設計、開発、運用に情熱を注いでいます。特に、モダンなフロントエンド技術とスケーラブルなバックエンドシステムの構築に強みがあります。新しい技術を学ぶことに意欲的で、チームと協力して優れた製品を作り上げることを目指しています。
-            </p>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">職務経歴</h2>
-            <div class="job">
-                <h3>株式会社サンプルテック</h3>
-                <p class="job-period">2020年4月 - 現在</p>
-                <p class="job-role">シニアソフトウェアエンジニア</p>
-                <ul>
-                    <li>主力製品であるSaaSアプリケーションのフロントエンドおよびバックエンド開発を担当。</li>
-                    <li>ReactとTypeScriptを用いたコンポーネントベースのUIを設計・実装し、パフォーマンスを30%改善。</li>
-                    <li>Go言語によるマイクロサービスアーキテクチャの導入を主導し、システムの可用性を向上。</li>
-                    <li>チームの若手メンバーのメンタリングやコードレビューを実施。</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>株式会社ウェブクリエイト</h3>
-                <p class="job-period">2017年4月 - 2020年3月</p>
-                <p class="job-role">Webデベロッパー</p>
-                <ul>
-                    <li>クライアント向けのWebサイトやECサイトの構築に従事。</li>
-                    <li>PHP (Laravel) とVue.jsを使ったフルスタック開発を担当。</li>
-                    <li>要件定義から設計、実装、テスト、保守まで一貫して担当。</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">スキル</h2>
-            <div class="skills">
-                <div class="skill-category">
-                    <h3>フロントエンド</h3>
-                    <p>HTML, CSS, JavaScript, TypeScript, React, Vue.js, Next.js</p>
+        <main class="resume">
+            <header class="resume-header">
+                <div class="profile">
+                    <img src="./face2-transparent.png" alt="プロフィール写真" class="profile-icon">
+                    <div class="profile-info">
+                        <h1 class="name">鈴木健志</h1>
+                        <p class="address">広島県広島市</p>
+                        <div class="links">
+                            <a href="https://github.com/suzulabo" target="_blank"><span class="material-icons">code</span> suzulabo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>バックエンド</h3>
-                    <p>Go, Python, Node.js, PHP, SQL (PostgreSQL, MySQL)</p>
+                <div class="summary">
+                    <p>主に開発関連(設計、技術選定、コーディングなど)のお手伝いをさせてもらってます。
+一芸特化型というタイプではありませんが、一人でだいたいなんでもできるタイプです。
+サポートやセールス、ビジネスサイドの方なども、頼っていただければ幅広く対応しています。
+開発系以外のトピックも含め、相手の理解度に合わせられるのは強みの一つだと思います。
+(個人的愚痴など各種相談もサポート範囲)
+ChatGPT などは日常的に利用していますが、Agent 型の AI 活用は研究を始めたばかり。
+今後も関わる方々の成長を助けつつ、自身も成長できたらいいなと思ってます。</p>
                 </div>
-                <div class="skill-category">
-                    <h3>クラウド & DevOps</h3>
-                    <p>AWS (EC2, S3, Lambda), Docker, Terraform, GitHub Actions</p>
-                </div>
-            </div>
-        </section>
+            </header>
 
-        <section class="section">
-            <h2 class="section-title">プロジェクト</h2>
-            <div class="project">
-                <h3>個人ブログ</h3>
-                <p>Next.jsとVercelで構築した技術ブログ。学んだことを記事にしてアウトプットしています。</p>
-            </div>
-            <div class="project">
-                <h3>OSSコントリビューション</h3>
-                <p>いくつかのOSSプロジェクトにドキュメントの翻訳や軽微なバグ修正で貢献。</p>
-            </div>
-        </section>
+            <section class="experience">
+                <h2 class="section-title">職歴</h2>
+                
+                <article class="job-entry">
+                    <h3 class="job-title">フリーランス</h3>
+                    <p class="job-duration">2018 - now</p>
+                    
+                    <div class="project-entry">
+                        <h4 class="project-title">医療系アプリ開発</h4>
+                        <p class="project-duration">2022 - now</p>
+                        <p class="project-description">
+                            開発部のメンバーとして参加。協力会社に頼むほどではない作業の小回り要員ということでしたが、若い方々のサポートが主要業務だったと思います。
+Web システムは Django ベースでフロントエンドが弱かったので、モダンな UI フレームワークを提案し、NextJS+MUI+GraphQL を使った検査値グラフシステムの立ち上げを行いました。
+またアプリ開発はベトナムとのオフショアで、アプリ関連の知識を持った人がいなかったので主にサポート。
+コード管理やビルド環境が整ってなかったので整理し、Github Actions を使ったデプロイフローを作りました。
+現在は引き継ぎフェーズのため、主にミーティング参加程度です。
+                        </p>
+                        <div class="keywords">
+                            <span>NextJS</span><span>MUI</span><span>GraphQL</span><span>Android</span><span>iOS</span><span>WebRTC</span><span>Django</span><span>TypeScript</span>
+                        </div>
+                    </div>
 
-        <section class="section">
-            <h2 class="section-title">学歴</h2>
-            <div class="education">
-                <h3>東京情報大学</h3>
-                <p>情報科学部 | 2017年3月卒業</p>
-            </div>
-        </section>
+                    <div class="project-entry">
+                        <h4 class="project-title">グループチャットアプリ</h4>
+                        <p class="project-duration">2019 - 2020</p>
+                        <p class="project-description">
+                            知人との共同プロジェクトで、現在の LINE オープンチャットのようなサービスを企画。
+バックエンドに Firebase、フロントエンドに Ionic Framework を使用して実装。
+程なく LINE オープンチャットがリリースされ、また多人数での暗号化プロトコルに納得のいく水準のものが作れなかったため断念しました。Signal protocol も含め、E2EE(end-to-end encryption)について学べました。
+この知識を利用し、パスワードなしのファイル交換サービスも作りました。
+<a href="https://github.com/suzulabo/unseeen" target="_blank">https://github.com/suzulabo/unseeen</a>
+                        </p>
+                        <div class="keywords">
+                            <span>Ionic</span><span>Firebase</span><span>E2EE</span><span>TypeScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-entry">
+                        <h4 class="project-title">Announcing</h4>
+                        <p class="project-duration">2020 - now</p>
+                        <p class="project-description">
+                            現在開発中の Web サービス。
+<a href="https://github.com/announcing-app/announcing" target="_blank">https://github.com/announcing-app/announcing</a>
+初期は StencilJS、Firebase、Capacitor を使って Web/iOS/Android のマルチプラットフォームとして開発。
+一旦ストアへのリリースまで行いましたが、セーするポイントとアーキテクチャの見直しのため作り直し。
+現在は Sveltekit、Cloudflare で、Web のみのサービスとして構築しています。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="job-entry">
+                    <h3 class="job-title">株式会社 SyncThought</h3>
+                    <p class="job-duration">2011 - 2017</p>
+                    <p class="project-description">
+                        小さい会社の 5 人目のメンバーとして参画。
+コーディングから自前のデータセンター構築、アーキテクチャ設計、営業の同行、CS のサポート、採用面接などなど、いろいろとやってました。
+開発関連だけではなく会社全体のバランスを取るのも大事な役割だったと思います。
+                    </p>
+                    <div class="keywords">
+                        <span>Java</span><span>MySQL</span><span>Lucene</span><span>Solr</span><span>Hadoop</span><span>HBase</span><span>Cassandra</span><span>ElasticSearch</span><span>CentOS</span><span>VMWare</span><span>AWS</span><span>WordPress</span>
+                    </div>
+                </article>
+
+                <article class="job-entry">
+                    <h3 class="job-title">フリーランス etc</h3>
+                    <p class="job-duration">1997 - 2011</p>
+                    <p class="project-description">
+                        東京高専電気工学科卒業後、自動車系ソフトウェア開発の企業に就職し 3 年後にフリーランスで活動。
+その後 1 年ほどベンチャー企業にも参画。
+設計からコーディング、インフラ構築まで一人でなんでもやらないといけない環境で、いろいろと経験させていただきました。
+                    </p>
+                    <div class="keywords">
+                        <span>Python</span><span>GAE</span><span>C#</span><span>C++</span><span>PHP</span><span>SymbianOS</span><span>Embedded Linux</span><span>PocketPC</span><span>SQLServer</span><span>Delphi</span><span>Sybase</span><span>Btrieve</span>
+                    </div>
+                </article>
+
+            </section>
+        </main>
     </div>
 </body>
 </html>
