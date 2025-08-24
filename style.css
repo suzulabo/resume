@@ -1,0 +1,130 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.job-title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #3498db;
+    font-weight: 400;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 28px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.summary {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.job, .project, .education {
+    margin-bottom: 20px;
+}
+
+.job h3, .project h3, .education h3 {
+    font-size: 20px;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.job-period, .job-role {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.job li {
+    margin-bottom: 8px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.skill-category p {
+    margin: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .job-title {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
