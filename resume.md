@@ -56,7 +56,7 @@ Duration: 2020 - now
 https://github.com/announcing-app/announcing
 
 初期は StencilJS、Firebase、Capacitor を使って Web/iOS/Android のマルチプラットフォームとして開発。
-一旦ストアへのリリースまで行いましたが、セーするポイントとアーキテクチャの見直しのため作り直し。
+一旦ストアへのリリースまで行いましたが、コンセプトとアーキテクチャの見直しのため作り直し。
 現在は Sveltekit、Cloudflare で、Web のみのサービスとして構築しています。
 
 ## 株式会社 SyncThought
