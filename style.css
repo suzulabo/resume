@@ -1,13 +1,14 @@
 :root {
-    --primary-color: #1976d2;
+    --primary-color: #333;
     --text-color: #212121;
     --background-color: #f5f5f5;
     --card-background-color: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.08);
 }
 
 body {
     font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+    font-size: 15px;
     line-height: 1.7;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -46,33 +47,48 @@ body {
     object-fit: cover;
 }
 
+.name-kana {
+    font-size: 14px;
+    font-weight: 500;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
 .profile-info .name {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     margin: 0;
 }
 
 .profile-info .address {
-    font-size: 16px;
+    font-size: 15px;
     color: #757575;
-    margin: 4px 0 8px;
+    margin: 4px 0 12px;
 }
 
 .links a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.links .material-icons {
+.links a:hover {
+    color: #000;
+}
+
+.github-icon {
+    width: 16px;
+    height: 16px;
     margin-right: 8px;
+    fill: currentColor;
 }
 
 .summary p {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     white-space: pre-wrap;
 }
 
@@ -81,10 +97,10 @@ body {
 }
 
 .section-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+    color: var(--text-color);
+    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 8px;
     margin-bottom: 30px;
 }
@@ -94,13 +110,13 @@ body {
 }
 
 .job-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin: 0 0 4px;
 }
 
 .job-duration {
-    font-size: 14px;
+    font-size: 13px;
     color: #757575;
     margin-bottom: 16px;
 }
@@ -113,24 +129,24 @@ body {
 }
 
 .project-title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     margin: 0 0 4px;
 }
 
 .project-duration {
-    font-size: 14px;
+    font-size: 13px;
     color: #757575;
     margin-bottom: 8px;
 }
 
 .project-description {
     margin: 0 0 16px;
-    white-space: pre-wrap;
 }
 
 .project-description a {
     color: var(--primary-color);
+    text-decoration: underline;
 }
 
 .keywords {
@@ -140,16 +156,29 @@ body {
 }
 
 .keywords span {
-    background-color: #e3f2fd;
-    color: var(--primary-color);
+    background-color: #f5f5f5;
+    color: #555;
     padding: 4px 12px;
     border-radius: 16px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .resume {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
     .profile {
         flex-direction: column;
         text-align: center;
@@ -161,7 +190,7 @@ body {
     }
 
     .resume-header, .experience {
-        padding: 30px;
+        padding: 30px 20px;
     }
 }
 
@@ -169,6 +198,7 @@ body {
 @media print {
     body {
         background-color: #fff;
+        font-size: 12px;
     }
 
     .container {
@@ -181,15 +211,15 @@ body {
     .resume {
         box-shadow: none;
         border-radius: 0;
-        border: 1px solid #ddd;
+        border: none;
     }
 
     .resume-header, .experience {
-        padding: 20px;
+        padding: 10px;
     }
 
     .keywords span {
-        background-color: #f0f0f0;
+        background-color: #fff;
         border: 1px solid #ddd;
         color: #333;
     }
@@ -201,5 +231,9 @@ body {
 
     .links a::after {
         content: " (" attr(href) ")";
+    }
+
+    .github-icon {
+        display: none;
     }
 }

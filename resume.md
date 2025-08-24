@@ -1,5 +1,6 @@
 ---
-name: 鈴木健志
+name: 鈴木 健志
+kana: スズキ ケンジ
 address: 広島県広島市
 icon: ./face2-transparent.png
 github: https://github.com/suzulabo
@@ -13,7 +14,7 @@ github: https://github.com/suzulabo
 ChatGPT などは日常的に利用していますが、Agent 型の AI 活用は研究を始めたばかり。
 今後も関わる方々の成長を助けつつ、自身も成長できたらいいなと思ってます。
 
-# 職歴
+# 主な職歴
 
 ## フリーランス
 
