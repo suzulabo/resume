@@ -47,17 +47,25 @@ body {
     object-fit: cover;
 }
 
-.name-kana {
-    font-size: 14px;
-    font-weight: 500;
-    color: #757575;
+.name-wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 4px;
 }
 
 .profile-info .name {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0;
+    line-height: 1;
+}
+
+.name-kana {
+    font-size: 14px;
+    font-weight: 500;
+    color: #757575;
+    margin-left: 16px;
+    line-height: 1;
 }
 
 .profile-info .address {
@@ -142,6 +150,7 @@ body {
 
 .project-description {
     margin: 0 0 16px;
+    white-space: pre-line;
 }
 
 .project-description a {
@@ -187,6 +196,17 @@ body {
     .profile-icon {
         margin-right: 0;
         margin-bottom: 16px;
+    }
+
+    .name-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .name-kana {
+        margin-left: 0;
+        margin-top: 4px;
     }
 
     .resume-header, .experience {
