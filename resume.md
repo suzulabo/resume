@@ -7,7 +7,7 @@ github: https://github.com/suzulabo
 ---
 
 フリーランスのソフトウェアエンジニアとして開発支援を行っています。
-特定の技術領域に特化するのではなく、一人で調べてだいたいなんでもできる対応力が強みだと思います。
+課題や要求に対し、一人で調べてだいたいなんでもできる対応力が強みだと思います。
 またサポートやセールス、ビジネスサイドの方なども、頼っていただければ幅広く対応しています。
 開発系以外のトピックも含め、相手の理解度に合わせられるのは強みの一つだと思います。
 ChatGPT などは日常的に利用していますが、最近では Agent 型 AI の活用にも関心があり研究を進めています。
@@ -54,9 +54,13 @@ Duration: 2020 - now
 現在開発中の Web サービス。
 https://github.com/announcing-app/announcing
 
-初期は StencilJS、Firebase、Capacitor を使って Web/iOS/Android のマルチプラットフォームとして開発。
+初期は Stencil、Firebase、Capacitor を使って Web/iOS/Android のマルチプラットフォームとして開発。
 一旦ストアへのリリースまで行いましたが、コンセプトとアーキテクチャの見直しのため作り直し。
 現在は Sveltekit、Cloudflare で、Web のみで動かせるサービスとして構築しています。
+
+#### Keywords
+
+TypeScript, SvelteKit, Cloudflare, Stencil, Firebase, Capacitor
 
 ## 株式会社 SyncThought
 
